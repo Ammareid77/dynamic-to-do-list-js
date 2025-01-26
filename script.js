@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to add a new task
     const addTask = function() {
         const taskText = taskInput.value.trim();
-        
+
         if (taskText === "") {
             alert("Please enter a task!");
             return;
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create a remove button
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
-        removeButton.className = 'remove-btn';
+        removeButton.classList.add('remove-btn');
 
         // Attach event listener to remove the task
         removeButton.onclick = function() {
