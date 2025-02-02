@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Function to add a task
-    const addTask = function(taskText, save = true) {
+    const addTask = function(taskInput.value.trim(), taskText, save = true) {
         if (!taskText) {
             alert("Please enter a task!");
             return;
